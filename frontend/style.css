@@ -420,6 +420,11 @@ section {
     text-decoration: underline;
 }
 
+.contact-item:hover{
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
 /* Footer */
 .footer {
     background-color: var(--background);
