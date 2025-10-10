@@ -1,178 +1,262 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="dark">
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JoaoPedroHenriquesB - Data Analyst</title>
+    <link rel="stylesheet" href="./frontend/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JoaoPedroHenriquesB - Portfolio</title>
-    <link rel="stylesheet" href="./frontend/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
+  <body>
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Back-End Developer</h2>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-            <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
-                <span class="theme-icon">🌙</span>
-            </button>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>Data Analyst</h2>
         </div>
+        <ul class="nav-menu">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
     </nav>
 
     <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Olá, me chamo <span class="highlight">João Pedro</span></h1>
-                <p class="hero-subtitle">Desenvolvedor Back-End com a missão de transformar ideias em soluções úteis</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                    <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1>Hello, my name is <span class="highlight">João Pedro</span></h1>
+          <p class="hero-subtitle">
+            I transform complex data into clear, actionable insights.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">See Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                My name is João Pedro, I am a Data Analyst with experience in
+                Python, SQL, and data visualization. I specialize in
+                transforming raw data into compelling stories and solving
+                complex problems through analytical thinking.
+              </p>
+              <p>
+                I am constantly learning new tools and technologies to enhance
+                my skills and deliver high-quality, data-driven solutions. I
+                also enjoy using Python for automation to streamline processes
+                and improve efficiency.
+              </p>
+
+              <div class="skills">
+                <h3>Skills</h3>
+                <div class="skill-categories">
+                  <div class="skill-category">
+                    <h4>Languages & Databases</h4>
+                    <div class="skills-grid">
+                      <span class="skill-tag">Python</span>
+                      <span class="skill-tag">SQL</span>
+                      <span class="skill-tag">MySQL</span>
+                      <span class="skill-tag">SQLite</span>
+                    </div>
+                  </div>
+                  <div class="skill-category">
+                    <h4>Data Science & Visualization</h4>
+                    <div class="skills-grid">
+                      <span class="skill-tag">Pandas</span>
+                      <span class="skill-tag">NumPy</span>
+                      <span class="skill-tag">Matplotlib</span>
+                      <span class="skill-tag">Seaborn</span>
+                      <span class="skill-tag">Power BI</span>
+                      <span class="skill-tag">Excel</span>
+                    </div>
+                  </div>
+                  <div class="skill-category">
+                    <h4>Tools & Technologies</h4>
+                    <div class="skills-grid">
+                      <span class="skill-tag">Git</span>
+                      <span class="skill-tag">Data Visualization</span>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="about" class="about">
-            <div class="container">
-                <h2 class="section-title">Sobre Mim</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Me chamo João Pedro, sou desenvolvedor Back-End com experiência em Python, Java, JavaScript e
-                            banco de dados como MySQL e SQLite. Apaixonado por resolver problemas e criar soluções
-                            funcionais.</p>
-                        <p>Sempre busco aprender novas tecnologias e melhorar minhas habilidades para entregar soluções
-                            de qualidade.</p>
-
-                        <div class="skills">
-                            <h3>habilidades</h3>
-                            <div class="skills-grid">
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">Java</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">SpringBoot</span>
-                                <span class="skill-tag">Flask</span>
-                                <span class="skill-tag">Django</span>
-                                <span class="skill-tag">Node.Js</span>
-                                <span class="skill-tag">MySQL</span>
-                                <span class="skill-tag">SQLite</span>
-                                <span class="skill-tag">HTML</span>
-                                <span class="skill-tag">CSS</span>
-                                <span class="skill-tag">Git</span>
-                            </div>
-                        </div>
-                    </div>
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">My Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="placeholder-image">
+                  <img
+                    src="./imgs/libras-maos.png"
+                    alt="sign language translator"
+                    width="490px"
+                  />
                 </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2 class="section-title">Meus Projetos</h2>
-                <div class="projects-grid">
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="placeholder-image">
-                                <img src="./imgs/libras-maos.png" alt="libras" width="490px">
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Tradutor de libras</h3>
-                            <p>Projeto de tradutor de Libras que utiliza Python, OpenCV e MediaPipe para capturar gestos
-                                das mãos via webcam.</p>
-                            <div class="project-links">
-                                <a href="#" class="project-link"></a>
-                                <a target="_blank" href="https://github.com/JoaoPedroHenriquesB/libra-letter-translator"
-                                    class="project-link">Saiba Mais</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="placeholder-image">
-                                <img src="./imgs/collaborative-list.png" alt="collaborative list" width="400px">
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Listas Colaborativas</h3>
-                            <p>API de Lista Colaborativa desenvolvida com Spring Boot e Java. Crie salas, compartilhe
-                                com amigos e gerencie listas de tarefas, compras ou qualquer outra coisa em tempo real.
-                                Ideal para projetos em grupo e organização..</p>
-                            <div class="project-links">
-                                <a href="#" class="project-link"></a>
-                                <a target="_blank" href="https://github.com/JoaoPedroHenriquesB/collaborative-list"
-                                    class="project-link">Saiba Mais</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="placeholder-image">
-                                <img src="./imgs/login_register.png" alt="login and register" width="400px">
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Sistema de Login e Registro</h3>
-                            <p>O projeto utiliza uma arquitetura moderna com frontend hospedado no GitHub Pages e
-                                backend
-                                no Render, conectando-se a um banco de dados PostgreSQL.</p>
-                            <div class="project-links">
-                                <a href="#" class="project-link"></a>
-                                <a target="_blank"
-                                    href="https://github.com/JoaoPedroHenriquesB/Login-and-Register-System"
-                                    class="project-link">Saiba Mais</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
+              </div>
+              <div class="project-content">
+                <h3>Sign Language Translator</h3>
+                <p>
+                  A project using Python, OpenCV, and MediaPipe to recognize
+                  hand gestures through a webcam and translate them into
+                  letters.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">OpenCV</span>
+                  <span class="tag">MediaPipe</span>
                 </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Entre em Contato</h2>
-                <div class="contact-content">
-                    <p>Interessado em trabalhar juntos? Vamos conversar!</p>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <strong>Email:</strong>
-                            <a href="mailto:joaopedrohbalbino@gmail.com">joaopedrohbalbino@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>LinkedIn:</strong>
-                            <a href="https://www.linkedin.com/in/joaopedrohb/"
-                                target="_blank">https://www.linkedin.com/in/joaopedrohb/</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>GitHub:</strong>
-                            <a href="https://github.com/JoaoPedroHenriquesB"
-                                target="_blank">https://github.com/JoaoPedroHenriquesB</a>
-                        </div>
-                    </div>
+                <div class="project-links">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/JoaoPedroHenriquesB/libra-letter-translator"
+                    class="project-link"
+                    >Learn More</a
+                  >
                 </div>
+              </div>
             </div>
-        </section>
+
+            <div class="project-card">
+              <div class="project-image">
+                <div class="placeholder-image">
+                  <img
+                    src="./imgs/collaborative-list.png"
+                    alt="collaborative list"
+                    width="400px"
+                  />
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Collaborative Lists</h3>
+                <p>
+                  A Spring Boot API that allows users to create collaborative
+                  lists in real time. Ideal for shared tasks, shopping lists,
+                  and group organization.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">Spring Boot</span>
+                  <span class="tag">API</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/JoaoPedroHenriquesB/collaborative-list"
+                    class="project-link"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <div class="placeholder-image">
+                  <img
+                    src="./imgs/login_register.png"
+                    alt="login and register system"
+                    width="400px"
+                  />
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Login and Register System</h3>
+                <p>
+                  A modern system using frontend hosted on GitHub Pages and
+                  backend on Render, connected to a PostgreSQL database.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Full-Stack</span>
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">Security</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/JoaoPedroHenriquesB/Login-and-Register-System"
+                    class="project-link"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <div class="contact-content">
+            <p>Interested in working together? Let's talk!</p>
+            <div class="contact-info">
+              <a
+                href="mailto:joaopedrohbalbino@gmail.com"
+                class="btn btn-contact"
+                >Email</a
+              >
+              <a
+                href="https://www.linkedin.com/in/joaopedrohb/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-contact"
+                >LinkedIn</a
+              >
+              <a
+                href="https://github.com/JoaoPedroHenriquesB"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-contact"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy;João Pedro H. Balbino - Todos os direitos reservados.</p>
-        </div>
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> João Pedro H. Balbino - All rights
+          reserved.
+        </p>
+      </div>
     </footer>
 
-    <script src="./frontend/script.js"></script>
-</body>
+    <button id="backToTopBtn" title="Go to top">↑</button>
 
+    <script src="./frontend/script.js"></script>
+    <script>
+      // Set current year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
