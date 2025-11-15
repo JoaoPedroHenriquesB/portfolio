@@ -1,6 +1,3 @@
-/**
- * Main initialization function.
- */
 function init() {
   initSmoothScrolling();
   initScrollEffects();
@@ -12,10 +9,6 @@ function init() {
   initMobileMenu();
   initBackToTopButton();
 }
-
-/**
- * Sets up smooth scrolling for anchor links.
- */
 function initSmoothScrolling() {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
@@ -29,23 +22,18 @@ function initSmoothScrolling() {
   });
 }
 
-/**
- * Handles navbar styling and active link highlighting on scroll.
- */
 function initScrollEffects() {
   const navbar = document.querySelector(".navbar");
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
 
   window.addEventListener("scroll", () => {
-    // Navbar styling
     if (window.scrollY > 50) {
       navbar.classList.add("scrolled");
     } else {
       navbar.classList.remove("scrolled");
     }
 
-    // Active link highlighting
     let current = "";
     sections.forEach((section) => {
       const sectionTop = section.offsetTop;
@@ -64,9 +52,6 @@ function initScrollEffects() {
   });
 }
 
-/**
- * Sets up Intersection Observer for scroll-in animations.
- */
 function initIntersectionObserver() {
   const observerOptions = {
     threshold: 0.1,
@@ -89,9 +74,6 @@ function initIntersectionObserver() {
     });
 }
 
-/**
- * Initializes the typewriter effect on the hero title.
- */
 function initTypewriterEffect() {
   const heroTitle = document.querySelector(".hero-content h1");
   if (!heroTitle) return;
@@ -110,16 +92,9 @@ function initTypewriterEffect() {
   setTimeout(type, 500);
 }
 
-/**
- * Adds hover effect to skill tags.
- */
 function initSkillTagHover() {
-  // This is now handled by CSS :hover pseudo-class for better performance and separation of concerns.
 }
 
-/**
- * Adds a ripple effect to buttons on click.
- */
 function initButtonRippleEffect() {
   document.querySelectorAll(".btn").forEach((button) => {
     button.addEventListener("click", function (e) {
@@ -136,9 +111,6 @@ function initButtonRippleEffect() {
   });
 }
 
-/**
- * Manages the light/dark theme toggle and persists the choice.
- */
 function initThemeToggle() {
   const themeToggle = document.getElementById("themeToggle");
   const themeIcon = document.querySelector(".theme-icon");
@@ -156,9 +128,6 @@ function initThemeToggle() {
   });
 }
 
-/**
- * Initializes the mobile hamburger menu.
- */
 function initMobileMenu() {
   const hamburger = document.getElementById("hamburger");
   const navMenu = document.querySelector(".nav-menu");
@@ -177,9 +146,6 @@ function initMobileMenu() {
   });
 }
 
-/**
- * Manages the "Back to Top" button visibility and functionality.
- */
 function initBackToTopButton() {
   const backToTopBtn = document.getElementById("backToTopBtn");
 
@@ -195,5 +161,4 @@ function initBackToTopButton() {
   });
 }
 
-// Run all initialization functions after the DOM is loaded.
 document.addEventListener("DOMContentLoaded", init);
